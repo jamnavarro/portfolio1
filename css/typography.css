@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend');
+@import url('https://fonts.googleapis.com/css?family=Suwannaphum');
+@import "style.css";
+
+body {
+	font-family: "Suwannaphum", Lexend, Garamond, serif;
+	color: var(--black);
+}
+
+
+
+
+
+/* MAIN HEADER TEXT */
+.main-caption {
+	color: var(--white);
+	text-align: right;
+	font-size: 36px;
+	font-weight: lighter;
+	letter-spacing: 8px;
+	margin-right: 48px;
+}
+
+.main-title {
+	font-family: "Lexend", Helvetica, Arial, sans-serif;
+	color: var(--white);
+	text-align: left;
+	font-size: 96px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	padding: 48px;
+}
+
+
+
+
+/* PROJECT TEXT */
+.project-title {
+  font-family: "Lexend", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	padding-bottom: 30px;
+}
+
+.project-details {
+	font-family: "Suwannaphum", Georgia, Garamond, serif;
+	font-size: 20px;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	padding-bottom: 30px;
+}
+
+
+
+
+
+/* BUTTON TEXT */
+.button-text {
+	font-family: "Suwannaphum", Georgia, Garamond, serif;
+	letter-spacing: 3px;
+}
+
+
+
+
+@media only screen and (max-width: 5000px) {
+	
+	.project-title {
+		font-size: 60px;
+	}
+	
+	.project-details {
+		font-size: 26px;
+	}
+
+	.button-text {
+		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width: 1800px) {
+	.project-title {
+		font-size: 36px;
+	}
+	
+	.project-details {
+		font-size: 20px;
+	}
+
+	.button-text {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.main-caption {
+		font-size: 24px;
+	}
+
+	.main-title {
+		font-size: 72px;
+	}
+
+	.project-title {
+		font-size: 20px;
+	}
+	
+	.project-details {
+		font-size: 18px;
+	}
+
+	.button-text {
+		font-size: 18px;
+	}
+}

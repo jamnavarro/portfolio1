@@ -1,0 +1,158 @@
+@import "style.css";
+
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+/* HEADER SECTION */
+#header { 
+  background-color: var(--blue);
+}
+
+#header-text-container {
+  display: flex;
+  flex-direction: column; 
+  z-index: -1;
+  gap: 96px;
+  padding: 150px 0px;
+}
+
+/* PROJECT PAGES */
+#project-header {
+  background-color: var(--white);
+}
+
+
+
+
+
+/* MAIN CONTENT SECTION */
+#main-content {
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
+
+
+
+
+/* PROJECT CARDS */
+.project-card {
+  width: auto;
+	position: relative;
+	box-shadow: -15px 15px var(--black);
+	border-radius: 30px;
+  min-height: 350px;
+}
+
+.project-container {
+	padding: 48px 36px;
+}
+
+@media only screen and (max-width: 5000px) {
+  .project-card {
+    min-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project-card {
+    min-height: 570px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card {
+    min-height: 350px;
+  }
+}
+
+/* PROJECT CARD ALIGNMENT */
+.project-card.right {
+  text-align: right;
+	margin-left: 30%;
+}
+
+.project-card.left {
+	margin-right: 30%;
+}
+
+/* PROJECT CARD COLORS */
+.project-card.green {
+	background-color: var(--green);
+}
+
+.project-card.blue {
+	background-color: var(--blue);
+}
+
+.project-card.pink {
+	background-color: var(--pink);
+}
+
+.project-card.yellow {
+	background-color: var(--yellow);
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card.right {
+    margin-left: 0%;
+  }
+  
+  .project-card.left {
+    margin-right: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+.img.left {
+  width: 300px;
+  position: absolute;
+  left: -270px;
+  bottom: 50px;
+}
+
+.img.right {
+  width: 300px;
+  position: absolute;
+  right: -270px;
+  bottom: 50px;
+}
+
+img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    display: none;
+  }
+}
