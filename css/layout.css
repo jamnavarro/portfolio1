@@ -58,12 +58,13 @@ body {
 	box-shadow: -15px 15px var(--black);
 	border-radius: 30px;
   min-height: 350px;
+  padding-bottom: 30px;
 }
 
 .project-container {
 	padding: 48px 36px;
 }
-
+/* 
 @media only screen and (max-width: 5000px) {
   .project-card {
     min-height: 400px;
@@ -72,15 +73,15 @@ body {
 
 @media only screen and (max-width: 800px) {
   .project-card {
-    min-height: 570px;
+    min-height: 600px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .project-card {
-    min-height: 400px;
+    min-height: 0px;
   }
-}
+} */
 
 /* PROJECT CARD ALIGNMENT */
 .project-card.right {
