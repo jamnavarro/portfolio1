@@ -64,24 +64,6 @@ body {
 .project-container {
 	padding: 48px 36px;
 }
-/* 
-@media only screen and (max-width: 5000px) {
-  .project-card {
-    min-height: 400px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .project-card {
-    min-height: 600px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .project-card {
-    min-height: 0px;
-  }
-} */
 
 /* PROJECT CARD ALIGNMENT */
 .project-card.right {
@@ -124,7 +106,15 @@ body {
 
 
 
-
+/* PROJECT SECTIONS */
+#section-container {
+  display: flex;
+  flex-direction: column; 
+  z-index: -1;
+  gap: 10px;
+  padding: 50px 50px;
+  background-color: var(--white);
+}
 
 
 .img.left {
@@ -144,6 +134,13 @@ body {
 img {
   width: 100%;
   border-radius: 50px;
+  box-shadow: -15px 15px var(--black);
+}
+
+img:hover {
+  cursor: pointer;
+  transform: translate(-5px, 5px);
+	box-shadow: -5px 5px var(--black);
 }
 
 @media only screen and (max-width: 900px) {

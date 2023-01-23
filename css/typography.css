@@ -13,7 +13,6 @@ body {
 
 /* MAIN HEADER TEXT */
 .main-caption {
-	color: var(--white);
 	text-align: right;
 	font-size: 36px;
 	font-weight: lighter;
@@ -23,7 +22,6 @@ body {
 
 .main-title {
 	font-family: "Lexend", Helvetica, Arial, sans-serif;
-	color: var(--white);
 	text-align: left;
 	font-size: 96px;
 	font-weight: bold;
@@ -50,6 +48,44 @@ body {
 	letter-spacing: 3px;
 	padding-bottom: 30px;
 }
+
+
+
+
+
+
+/* GENERAL TEXT PROPERTIES */
+.header-text {
+	color: var(--black);
+  font-family: "Lexend", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	padding-top: 70px;
+}
+
+.subheader-text {
+	color: var(--black);
+  font-family: "Suwannaphum", Georgia, Garamond, serif;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+
+.sub-subheader-text {
+	color: var(--black);
+  	font-family: "Suwannaphum", Georgia, Garamond, serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+.body-text {
+	color: var(--black);
+	font-family: "Suwannaphum", Georgia, Garamond, serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
 
 
 
