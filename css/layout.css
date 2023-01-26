@@ -199,18 +199,11 @@ body {
 }
 
 .project-image:hover {
-  cursor: pointer;
   transform: translate(-5px, 5px);
 	box-shadow: -5px 5px var(--black);
 }
 
 @media only screen and (max-width: 900px) {
-  .project-image {
-    width: 70%;
-  }  
-}
-
-@media only screen and (max-width: 600px) {
   .project-image {
     display: none;
   }
