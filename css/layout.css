@@ -144,6 +144,9 @@ body {
   width: calc((100% - 16px) / 2);
 }
 
+.section-image-container.third {
+  width: calc((100% - 16px) / 2);
+}
 
 
 
