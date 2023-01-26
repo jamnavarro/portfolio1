@@ -27,7 +27,6 @@
 .nav-menu {
 	display: none;
 	width: 100%;
-	margin: 0;
 	list-style-type: none;
 	list-style-image: none;
 	flex-direction: column;
@@ -36,23 +35,23 @@
 .menu-item {
 	display: block;
 	width: 100%;
-	padding: 30px 0;
+	padding: 40px 0;
 	text-align: end;
 }
 
 .bar {
-	width: 40px;
+	width: 30px;
 	height: 5px;
 	background-color: var(--black);
-	margin: 10px auto;
+	margin: 7px auto;
 }
   
 .menu-icon {
 	display: block;
 	position: absolute;
-	top: 20px;
-	right: 5%;
-  }
+	top: 25px;
+	right: 25px;
+}
 
 .menu-icon:hover .bar {
 	background-color: var(--grey);
