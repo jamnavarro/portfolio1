@@ -175,7 +175,7 @@ body {
 
 
 
-
+/* ABOUT HOME PAGE SECTION */
 #about-section { 
   padding: 70px;
   display: flex;
@@ -185,6 +185,35 @@ body {
 }
 
 
+
+
+/* ICON HOME PAGE SECTION */
+#icon-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--blue);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+a.icon-link {
+  transition: transform 200ms ease-in-out;
+}
+
+a.icon-link:hover {
+  cursor: pointer;
+  stroke-width: 5;
+  margin: 0;
+  transform: scale(0.9);
+  transition: transform 200ms ease-in-out;
+}
 
 
 
