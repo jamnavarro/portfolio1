@@ -51,6 +51,8 @@ body {
 
 
 
+
+
 /* PROJECT CARDS */
 .project-card {
   width: auto;
@@ -173,6 +175,14 @@ body {
 
 
 
+
+#about-section { 
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--green);
+}
 
 
 
