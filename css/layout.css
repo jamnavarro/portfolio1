@@ -106,6 +106,19 @@ body {
 
 
 
+/* RESUME PAGE */
+#resume-container {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--white);
+}
+
+
+
+
+
 /* PROJECT SECTIONS */
 #section-container {
   display: flex;
@@ -114,11 +127,22 @@ body {
   background-color: var(--white);
 }
 
+@media only screen and (max-width: 2000px) {
+  .section-gallery-content {
+    margin: 160px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section-gallery-content {
+    margin: 20px;
+  }
+}
+
 .section-gallery-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 34px 16px;
-  margin: 50px;
+  gap: 16px 0px;
 }
 
 .section-image-container {
@@ -127,7 +151,6 @@ body {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .section-image {
@@ -136,16 +159,15 @@ body {
 }
 
 .section-image-container.large {
-  width: 50%;
+  width: 100%;
 }
-
 
 .section-image-container.half {
   width: calc((100% - 16px) / 2);
 }
 
 .section-image-container.third {
-  width: calc((100% - 16px) / 2);
+  width: calc((90% - 16px) / 3);
 }
 
 
@@ -185,7 +207,7 @@ body {
 @media only screen and (max-width: 900px) {
   .project-image {
     width: 70%;
-  }
+  }  
 }
 
 @media only screen and (max-width: 600px) {
