@@ -1,5 +1,4 @@
-# portfolio
-New portfolio!
+# Jam Navarro's Portfolio
 
 Link to my portfolio is [here](https://jamnavarro.github.io/portfolio/). There, you can find my various projects and digital design work.
 
