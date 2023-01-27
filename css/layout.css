@@ -51,6 +51,23 @@ body {
 
 
 
+/* TEXT CONTENT SECTION */
+#text-container {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--white);
+}
+
+@media only screen and (max-width: 1000px) {
+  #text-container {
+    padding: 30px;
+  }
+}
+
+
 
 
 /* PROJECT CARDS */
@@ -131,7 +148,10 @@ body {
 
 @media only screen and (max-width: 2000px) {
   .section-gallery-content {
-    margin: 160px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
