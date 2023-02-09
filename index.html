@@ -9,11 +9,15 @@
 
 		<link rel="icon" href="./assets/icons/icon.png">
 
-		<link rel="stylesheet" href="./css/animation.css">
-		<link rel="stylesheet" href="./css/layout.css">
+		<link rel="stylesheet" href="./css/button.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="stylesheet" href="./css/navbar.css">
+		<link rel="stylesheet" href="./css/project-card.css">
+		<link rel="stylesheet" href="./css/scrollbar.css">
+		<link rel="stylesheet" href="./css/section.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/typography.css">
-		<link rel="stylesheet" href="./css/utilities.css">
+
 
 		<script defer src="./js/navbar.js"></script>
 		
@@ -23,205 +27,175 @@
 	
 	<body>
 
-		<!-- NAVIGATION BAR -->
-        <div class="navbar">
-      
-            <ul id="nav-list" class="nav-menu">
-              <li class="menu-item">
-                <a class="header-text" href="./index.html">home</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-text" href="./pages/resume.html">resume</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-text" href="mailto:jamsnavarro1@gmail.com">contact</a>
-              </li>
-            </ul>
-      
-            <div id="nav-toggle" class="menu-icon">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-      
-          </div>
-
-
-		<!-- HEADER -->
-		<div id="header">
-
-			<div id="header-text-container">
-
-				<div class="main-caption">designer and developer.
-					<div>based in baltimore.</div>
-				</div>
-
-				<div class="main-title">jam navarro</div>
+		<!-- NAVBAR -->
+		<div id="myNav" class="overlay">
+			<!-- ICON SECTION -->
+			<div id="icon-section">
+				<a class="icon-link" target="_blank" href="https://devpost.com/jamsnavarro1">
+				<image src="./assets/icons/devpost.svg" class="icon"/>
+				</a>
+				<a class="icon-link" target="_blank" href="https://github.com/jamnavarro">
+				<image src="./assets/icons/github.svg" class="icon"/>
+				</a>
+				<a class="icon-link" target="_blank" href="https://www.linkedin.com/in/jam-navarro/">
+				<image src="./assets/icons/linkedin.svg" class="icon"/>
+				</a>
+				<a class="icon-link" target="_blank" href="https://www.redbubble.com/people/artjams/shop">
+					<image src="./assets/icons/redbubble.svg" class="icon"/>
+				</a>
 			</div>
-
+			
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a class="header-text" href="./index.html">home</a>
+				<a class="header-text" href="mailto:jamsnavarro1@gmail.com">contact</a>
+			</div>
 		</div>
+
+		<span onclick="openNav()">
+			<div class="menu-icon">
+				<div class="bar"></div>
+				<div class="menu-icon">
+					<div class="bar"></div>
+				</div>
+			</div>
+		</span>
+
 
 		
-
-		<!-- ABOUT ME -->
-		<div id="about-section">
-			<div class="main-title">about me</div>
-			<div class="sub-subheader-text">
-				Hi, I'm Jam! I am an <b>undergraduate student</b> at <b>Johns Hopkins University</b> studying
-				<b>Computer Science and Cognitive Science.</b>
-				<div class="header-text"></div>
-				
-			<div>Currently I work as a <b>digital graphic designer</b> on the JHU Homewood
-				campus and have experience in <b>frontend web and mobile app development</b>.
-				I also have some ongoing personal projects exploring <b>UX case studies</b> as well as 
-				<b>game design in Unity</b>. Contact me and I would be happy to share my progress
-				on them!
+		<!-- MAIN PORTFOLIO SECTIONS -->	
+		<div class="container">
+			<!-- HEADER -->
+			<div class="section">
+				<div class="parallax-name"></div>
 			</div>
-			<div class="header-text"></div>
+			
+			<!-- ABOUT ME -->
+			<div class="section about">
+				<div class="project-card white">
+					<div class="text-container">
+						<div class="header-text">about me</div>
 
-			<div>Feel free to check out my work projects below.</div>
-			</div>
-		</div>
-
-
-		<!-- MAIN CONTENT -->
-		<div id="main-content">
-
-			<!-- OCTOPODES GRAPHICS -->
-			<div class="project-card pink right">
-				<div class="project-container">
-
-					<img class="project-image left" src="assets/images/octopodes/octopodes-main-logo.png">
-	
-					<div class="project-title">
-						JHU Octopodes
-					</div>
-					
-					<div class="project-details">
-						Collegiate a cappella group concert posters and social media post designs.
-					</div>
-					
-					<a class="button project right" href="./pages/octopodes.html">
-						<div class="button-text">
-							see designs
+						<div class="body-text">
+						Hi, I'm Jam! I am an undergraduate at Johns Hopkins University studying Computer Science and Cognitive Science.
+						<br>
+						<br>
+						Currently I work as a digital graphic designer on the JHU Homewood campus and have experience in illustration, UX design and research, and frontend web development.
+						<br>
+						<br>
+						Feel free to check out my existing work projects below.
 						</div>
-					</a>
+					</div>
 
 				</div>
 			</div>
 
+			
+			<!-- PROJECT CONTENT -->
 			<!-- ALUMNI WEEKEND 2022 -->
-			<div class="project-card blue left">
-				<div class="project-container">
-
-					<img class="project-image right" src="assets/images/aw2022/aw-2022-main-logo.png">
-	
-
-					<div class="project-title">
-						JHU Alumni Weekend 2022
+			<div class="section">
+				<div class="project-card left pink">
+					<div class="project-card-container">
+						<img class="project-image right" src="./assets/images/aw2022/aw-2022-main-logo.png">
+							<div class="header-text">JHU Alumni Weekend 2022</div>
+						
+							<div class="body-text">
+								Event branding design for Johns Hopkins University's Alumni Weekend 2022.
+							</div>
+	 
+							<a class="button" href="./pages/aw2022.html">
+								<div class="button-text">
+									see designs
+								</div>
+							</a>
 					</div>
-
-					<div class="project-details">
-						Event branding design for Johns Hopkins University's Alumni Weekend 2022.
-					</div>
-
-					<a class="button project left" href="./pages/aw2022.html">
-						<div class="button-text">
-							see designs
-						</div>
-					</a>
-
 				</div>
 			</div>
 
-			<!-- VIRTUAL BOOKSHELF -->
-			<div class="project-card green right">
-				<div class="project-container">
-
-					<img class="project-image left" src="assets/images/dogeared/dogeared-logo.png">
-
-					<div class="project-title">
-						dog-eared: virtual bookshelf
-					</div>
-
-					<div class="project-details">
-						UI design of a personalized library management app.
-					</div>
-
-					<a class="button project right" href="./pages/dogeared.html">
-						<div class="button-text">
-							see case study
+			<!-- OCTOPODES -->
+			<div class="section">
+				<div class="project-card right yellow">
+					<div class="project-card-container">
+						<img class="project-image left" src="./assets/images/octopodes/octopodes-main-logo.png">
+						<div class="header-text">JHU Octopodes</div>
+						
+						<div class="body-text">
+							Collegiate a cappella group concert posters and social media post designs.
 						</div>
-					</a>
 
+						<a class="button" href="./pages/octopodes.html">
+							<div class="button-text">
+								see designs
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 
-			<!-- ALUMNI WEEKEND 2023 -->
-			<div class="project-card yellow left">
-				<div class="project-container">
-					
-					<img class="project-image right" src="assets/images/aw2023/aw-2023-main-logo.png">
-
-					<div class="project-title">
-						JHU Alumni Weekend 2023
-					</div>
-
-					<div class="project-details">
-						Event branding design for Johns Hopkins University's Alumni Weekend 2023.
-					</div>
-
-					<a class="button project left" href="./pages/aw2023.html">
-						<div class="button-text">
-							coming soon!
+			<!-- MOODLY -->
+			<div class="section">
+				<div class="project-card left blue">
+					<div class="project-card-container">
+						<img class="project-image right" src="./assets/images/moodly/moodly-main-logo.png">
+						<div class="header-text">moodly</div>
+						
+						<div class="body-text">
+							UI and Interface design for web-based interactive synthesizer generator application.
 						</div>
-					</a>
 
+						<a class="button" href="./pages/moodly.html">
+							<div class="button-text">
+								see designs
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 
-			<!-- ILLUSTRATIONS AND VISUAL WORK -->
-			<div class="project-card green right">
-				<div class="project-container">
-
-					<div class="project-title">
-						Illustrations and Visual Work
-					</div>
-
-					<div class="project-details">
-						Other miscellaneous projects and illustrations!
-					</div>
-
-					<a class="button project right" href="./pages/illustrations.html">
-						<div class="button-text">
-							see illustrations
+			<!-- NUCLEAR SUMMER -->
+			<div class="section">
+				<div class="project-card right green">
+					<div class="project-card-container">
+						<img class="project-image left" src="./assets/images/nuclear-summer/nuclear-summer-main-logo.png">
+						<div class="header-text">nuclear summer</div>
+						
+						<div class="body-text">
+							Character and background art of pixel post-apocalyptic story-based indie game.
 						</div>
-					</a>
 
+						<a class="button" href="./pages/nuclear-summer.html">
+							<div class="button-text">
+								see designs
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
+
+			<!-- DOGEARED -->
+			<div class="section">
+				<div class="project-card left white">
+					<div class="project-card-container">
+						<img class="project-image right" src="./assets/images/dogeared/dogeared-logo.png">
+						<div class="header-text">dog-eared: virtual bookshelf</div>
+						
+						<div class="body-text">
+							UX and UI design of personalized library management app.
+						</div>
+
+						<a class="button" href="./pages/dogeared.html">
+							<div class="button-text">
+								see designs
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
 
 		</div>
-
-
-		<!-- ICON SECTION -->
-		<div id="icon-section">
-            <a class="icon-link" target="_blank" href="https://devpost.com/jamsnavarro1">
-              <image src="./assets/icons/devpost.svg" class="icon"/>
-            </a>
-            <a class="icon-link" target="_blank" href="https://github.com/jamnavarro">
-              <image src="./assets/icons/github.svg" class="icon"/>
-            </a>
-            <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/jam-navarro/">
-              <image src="./assets/icons/linkedin.svg" class="icon"/>
-            </a>
-			<a class="icon-link" target="_blank" href="https://www.redbubble.com/people/artjams/shop">
-				<image src="./assets/icons/redbubble.svg" class="icon"/>
-			  </a>
-        </div>
-		
-
-	</body>
+	</div>
+</body>
 
 
 </html>
