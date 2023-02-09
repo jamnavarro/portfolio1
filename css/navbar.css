@@ -1,0 +1,70 @@
+@import "style.css";
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: var(--blue);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  transition: 0.3s;
+  color: var(--black);
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: var(--grey);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 60px;
+}
+
+.bar {
+	width: 10px;
+	height: 50px;
+	background: var(--black);
+}
+
+.menu-icon {
+  z-index: 5;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+  background: none;
+}
+
+.menu-icon:hover .bar {
+  transition: 0.3s;
+	background-color: var(--grey);
+}
+
+
+@media only screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

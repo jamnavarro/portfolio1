@@ -1,0 +1,25 @@
+@import "style.css";
+
+/* BUTTON DESIGN */
+a.button {
+	padding: 8px 30px;
+	text-decoration: none;
+	width: fit-content;
+	display: flex;
+	border-radius: 30px;
+}
+
+a.button {
+	background-color: var(--white);
+	color: var(--black);
+	box-shadow: -10px 10px var(--black);
+	border: 3px solid var(--black);
+	margin:auto
+}
+
+a.button:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	transform: translate(-5px, 5px);
+	box-shadow: -5px 5px var(--black);
+}

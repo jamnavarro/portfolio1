@@ -1,9 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	background-color:var(--purple);
+	background-color:var(--white);
 	background-size: 40px 40px;
 	background-image:
-		linear-gradient(to left, var(--white) 1px, transparent 1px),
-		linear-gradient(to bottom, var(--white) 1px, transparent 1px);
+		linear-gradient(to left, var(--grey) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grey) 1px, transparent 1px);
 }
 
 :root {
