@@ -9,11 +9,15 @@
 
 		<link rel="icon" href="../assets/icons/icon.png">
 
-		<link rel="stylesheet" href="../css/animation.css">
-		<link rel="stylesheet" href="../css/layout.css">
+		<link rel="stylesheet" href="../css/button.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/project-card.css">
+		<link rel="stylesheet" href="../css/scrollbar.css">
+		<link rel="stylesheet" href="../css/section.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/typography.css">
-		<link rel="stylesheet" href="../css/utilities.css">
+
 
 		<script defer src="../js/navbar.js"></script>
 		
@@ -23,73 +27,75 @@
 	
 	<body>
 
-		<!-- NAVIGATION BAR -->
-        <div class="navbar">
-      
-            <ul id="nav-list" class="nav-menu">
-              <li class="menu-item">
-                <a class="header-text" href="../index.html">home</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-text" href="../pages/resume.html">resume</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-text" href="mailto:jamsnavarro1@gmail.com">contact</a>
-              </li>
-            </ul>
-      
-            <div id="nav-toggle" class="menu-icon">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-      
-          </div>
-
-
-
-		<div id="header">
-
-			<div id="header-text-container">
-
-        <div class="main-caption">
-          Poster and social media post designs for Johns Hopkins University's oldest
-          all-gender a cappella group, Octopodes, for Spring Concert 2022 and Fall
-          Concert 2022.
-        </div>
-
-				<div class="main-title">JHU Octopodes</div>
-                
+		<!-- NAVBAR -->
+		<div id="myNav" class="overlay">
+			<!-- ICON SECTION -->
+			<div id="icon-section">
+				<a class="icon-link" target="_blank" href="https://devpost.com/jamsnavarro1">
+				<image src="../assets/icons/devpost.svg" class="icon"/>
+				</a>
+				<a class="icon-link" target="_blank" href="https://github.com/jamnavarro">
+				<image src="../assets/icons/github.svg" class="icon"/>
+				</a>
+				<a class="icon-link" target="_blank" href="https://www.linkedin.com/in/jam-navarro/">
+				<image src="../assets/icons/linkedin.svg" class="icon"/>
+				</a>
+				<a class="icon-link" target="_blank" href="https://www.redbubble.com/people/artjams/shop">
+					<image src="../assets/icons/redbubble.svg" class="icon"/>
+				</a>
 			</div>
-
+			
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a class="header-text" href="../index.html">home</a>
+				<a class="header-text" href="mailto:jamsnavarro1@gmail.com">contact</a>
+			</div>
 		</div>
 
+		<span onclick="openNav()">
+			<div class="menu-icon">
+				<div class="bar"></div>
+				<div class="menu-icon">
+					<div class="bar"></div>
+				</div>
+			</div>
+		</span>
+
+
 		
-		<!-- SECTION CONTENT -->
+		<!-- MAIN PORTFOLIO SECTIONS -->	
+		<div class="container">
+			<!-- HEADER -->
+			<div class="section">
+				<div class="project-card about">
+					<div class="text-container">
+						<div class="header-text">JHU Octopodes</div>
 
-        <div id="section-container">
-            <div class="section-gallery-content">
-                <div class="section-image-container large">
-                    <img src="../assets/images/octopodes/octopodes-poster.png">
-                </div>
+						<div class="body-text">
+							Poster and social media post designs for Johns Hopkins University's oldest all-gender a cappella group, Octopodes, for Spring Concert 2022 and Fall Concert 2022.
+							<br>
+							<br>
+							<i>
+							Procreate on iPad, Adobe Photoshop
+							</i>
+						</div>
+					</div>
 
-                <div class="section-image-container half">
-                    <img src="../assets/images/octopodes/octopodes-fall-concert-poster-new.png">
-                </div>
-                
-                <div class="section-image-container half">
-                    <img src="../assets/images/octopodes/octopodes-fall-insta.png">
-                </div>
+				</div>
+			</div>
 
-                <div class="section-image-container half">
-                    <img src="../assets/images/octopodes/octopodes-spring-insta.png">
-                </div>
 
-                <div class="section-image-container half">
-                    <img src="../assets/images/octopodes/octopodes-spring-concert-poster.png">
-                </div>
-            </div>
-        </div>
-            
-	</body>
+			<!-- GALLERY -->
+			<div class="section">
+				<img class="section-image" style="width:40vw; border-radius:5px" src="../assets/images/octopodes/octopodes-poster.png">
+			</div>
+
+			<div class="section">
+				<img class="section-image" src="../assets/images/octopodes/octopodes-group-posters.png">
+			</div>
+		</div>
+	</div>
+</body>
+
+
 </html>
