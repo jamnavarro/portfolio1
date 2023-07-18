@@ -26,10 +26,160 @@
 	</head>
 	
 	<body>
-
 		<!-- NAVBAR -->
+
 		<div id="myNav" class="overlay">
-			<!-- ICON SECTION -->
+			
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			
+			<div class="overlay-content">
+				<a class="subheader-text current" style="text-align:center" href="./index.html">work</a>
+				<a class="subheader-text" style="text-align:center" href="./pages/playground.html">playground</a>
+				<a class="subheader-text" style="text-align:center" href="./pages/about.html">about me</a>
+				<a class="subheader-text" style="text-align:center" href="https://drive.google.com/file/d/1M9I-hcXSRD4NDlnRQPDhHl8yqv2A7_d0/view?usp=sharing">resume</a>
+			</div>
+		</div>
+
+		<span onclick="openNav()">
+			<div class="menu-icon">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</span>
+		
+		<!-- MAIN PORTFOLIO SECTIONS -->	
+		<div class="container">
+			<div class="topnav" id="myTopnav">
+				<a class="body-text" style="text-align:center" href="https://drive.google.com/file/d/1M9I-hcXSRD4NDlnRQPDhHl8yqv2A7_d0/view?usp=sharing">resume</a>
+				<a class="body-text" style="text-align:center" href="./pages/about.html">about me</a>
+				<a class="body-text" style="text-align:center" href="./pages/playground.html">playground</a>
+				<a class="body-text current" style="text-align:center" href="./index.html">work</a>
+			</div>
+
+			<!-- HEADER -->
+			<div class="parallax">
+				<div class="title-section">
+					<div class="project-card">
+						<div class="project-card-container">
+
+							<div class="jam-text" style="text-align:left">
+								jam navarro.
+							</div>
+							<div class="subheader-text" style="text-align:right; color:var(--purple)">computer science and cognitive science <a href="https://www.jhu.edu/">@johns hopkins university.</a></div>
+							<div class="subheader-text" style="text-align:right; color:var(--purple)">current ui/ux design intern <a href="https://dimin.com/">@dimensional innovations.</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- GAMIFICATION APP -->
+			<!-- <div class="section">
+
+				<div class="project-card">
+
+					<div class="project-card-container">
+						<div class="subheader-text">Exploring cozy gamification to facilitate studying</div>
+
+						<div class="image-box">
+							<a class= "image-button" href="./pages/aw2022.html">
+								<img class="section-image" src="./assets/images/portfolio-cover.png"/>
+							</a>
+						</div>
+						
+						<div class="sub-subheader-text" style="text-align:right">
+							<i>ZIP - personal project</i>
+						</div>
+
+						<div class="body-text" style="text-align:right; color:var(--purple)">
+							mobile | ux design
+						</div>
+	 
+					</div>
+				</div>
+			</div> -->
+
+			<!-- UCREDIT REVIEWER DASHBOARD -->
+			<div class="section">
+				<div class="subheader-text" style="color:var(--purple)">website under construction!</a></div>
+
+				<div class="project-card">
+
+					<div class="project-card-container">
+						<div class="subheader-text">Improving advising for undergraduate degree plans - COMING SOON</div>
+
+						<div class="image-box">
+							<a class= "image-button" href="./pages/ucredit.html">
+								<img class="section-image" src="./assets/images/ucredit.svg"/>
+							</a>
+						</div>
+						
+												
+						<div class="sub-subheader-text" style="text-align:right">
+							<i>ucredit at johns hopkins university - ux team</i>
+						</div>
+
+						<div class="body-text" style="text-align:right; color:var(--purple)">
+							ux research | user interviews
+						</div>
+	 
+					</div>
+				</div>
+			</div>
+
+			<!-- IOWA H-LOUNGE -->
+			<!-- <div class="section">
+				<div class="project-card">
+					<div class="project-card-container">
+						<div class="subheader-text">Creating joy in undergraduate student housing</div>
+
+						<div class="image-box">
+							<a class= "image-button" href="./pages/aw2022.html">
+								<img class="section-image" src="./assets/images/portfolio-cover.png"/>
+							</a>
+						</div>
+						
+						<div class="sub-subheader-text" style="text-align:right">
+							<i>university of iowa hillcrest hall - dimensional innovations ux intern</i>
+						</div>
+
+						<div class="body-text" style="text-align:right; color:var(--purple)">
+							web-app ui design | design development handoff
+						</div>
+
+					</div>
+				</div>
+			</div> -->
+
+			<!-- JHU ALUMNI WEEKEND 2022  -->
+			<div class="section">
+
+				<div class="project-card">
+
+					<div class="project-card-container">
+						<div class="subheader-text">Creating brand graphics for annual university alumni events</div>
+
+						<div class="image-box">
+							<a class= "image-button" href="./pages/aw2022.html">
+								<img class="section-image" src="./assets/images/aw2022.png"/>
+							</a>
+						</div>
+						
+						<div class="sub-subheader-text" style="text-align:right">
+							<i>jhu reunion & homecoming</i>
+						</div>
+
+						<div class="body-text" style="text-align:right; color:var(--purple)">
+							illustration | branding | graphic design
+						</div>
+	 
+					</div>
+				</div>
+			</div>
+
+			<!-- ICON SECTION
+
 			<div id="icon-section">
 				<a class="icon-link" target="_blank" href="https://devpost.com/jamsnavarro1">
 				<image src="./assets/icons/devpost.svg" class="icon"/>
@@ -43,157 +193,23 @@
 				<a class="icon-link" target="_blank" href="https://www.redbubble.com/people/artjams/shop">
 					<image src="./assets/icons/redbubble.svg" class="icon"/>
 				</a>
-			</div>
-			
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="overlay-content">
-				<a class="header-text" href="./index.html">home</a>
-				<a class="header-text" href="https://drive.google.com/file/d/1tUMSdyMStLgDgGEVORc3bjvTuVDAhXwv/view?usp=sharing">resume</a>
-				<a class="header-text" href="mailto:jamsnavarro1@gmail.com">contact</a>
-			</div>
-		</div>
+				
+			</div> -->
 
-		<span onclick="openNav()">
-			<div class="menu-icon">
-				<div class="bar"></div>
-				<div class="menu-icon">
-					<div class="bar"></div>
+			<!-- BUTTON
+				
+				<a class="button" href="./pages/aw2022.html">
+				<div class="button-text">
+					SEE CASE STUDY
 				</div>
-			</div>
-		</span>
-
-
-		
-		<!-- MAIN PORTFOLIO SECTIONS -->	
-		<div class="container">
-			<!-- HEADER -->
-			<div class="section">
-				<div class="parallax-name"></div>
-			</div>
-			
-			<!-- ABOUT ME -->
-			<div class="section about">
-				<div class="project-card white">
-					<div class="text-container">
-						<div class="header-text">about me</div>
-
-						<div class="body-text">
-						Hi, I'm Jam! I am an undergraduate at Johns Hopkins University studying Computer Science and Cognitive Science.
-						<br>
-						<br>
-						Currently I work as a digital graphic designer on the JHU Homewood campus and have experience in illustration, UX design and research, and frontend web development.
-						<br>
-						<br>
-						Feel free to check out my existing work projects below.
-						</div>
-					</div>
-
-				</div>
-			</div>
+			</a> -->
 
 			
-			<!-- PROJECT CONTENT -->
-			<!-- ALUMNI WEEKEND 2022 -->
-			<div class="section">
-				<div class="project-card left pink">
-					<div class="project-card-container">
-						<!-- <img class="project-image right" src="./assets/images/aw2022/aw-2022-main-logo.png"> -->
-							<div class="header-text">JHU Alumni Weekend 2022</div>
-						
-							<div class="body-text">
-								Event branding design for Johns Hopkins University's Alumni Weekend 2022.
-							</div>
-	 
-							<a class="button" href="./pages/aw2022.html">
-								<div class="button-text">
-									see designs
-								</div>
-							</a>
-					</div>
+			<div class="footer">
+				<div class="body-text">
+					<i>website made by me <3 with pure javascript, html, & css</i>
 				</div>
 			</div>
-
-			<!-- OCTOPODES -->
-			<div class="section">
-				<div class="project-card right yellow">
-					<div class="project-card-container">
-						<!-- <img class="project-image left" src="./assets/images/octopodes/octopodes-main-logo.png"> -->
-						<div class="header-text">JHU Octopodes</div>
-						
-						<div class="body-text">
-							Collegiate a cappella group concert posters and social media post designs.
-						</div>
-
-						<a class="button" href="./pages/octopodes.html">
-							<div class="button-text">
-								see designs
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- MOODLY -->
-			<div class="section">
-				<div class="project-card left blue">
-					<div class="project-card-container">
-						<!-- <img class="project-image right" src="./assets/images/moodly/moodly-main-logo.png"> -->
-						<div class="header-text">moodly</div>
-						
-						<div class="body-text">
-							UI and Interface design for web-based interactive synthesizer generator application.
-						</div>
-
-						<a class="button" href="./pages/moodly.html">
-							<div class="button-text">
-								see designs
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- NUCLEAR SUMMER -->
-			<div class="section">
-				<div class="project-card right green">
-					<div class="project-card-container">
-						<!-- <img class="project-image left" src="./assets/images/nuclear-summer/nuclear-summer-main-logo.png"> -->
-						<div class="header-text">nuclear summer</div>
-						
-						<div class="body-text">
-							Character and background art of pixel post-apocalyptic story-based indie game.
-						</div>
-
-						<a class="button" href="./pages/nuclear-summer.html">
-							<div class="button-text">
-								see designs
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- DOGEARED -->
-			<div class="section">
-				<div class="project-card left white">
-					<div class="project-card-container">
-						<!-- <img class="project-image right" src="./assets/images/dogeared/dogeared-logo.png"> -->
-						<div class="header-text">dog-eared: virtual bookshelf</div>
-						
-						<div class="body-text">
-							UX and UI design of personalized library management app.
-						</div>
-
-						<a class="button" href="./pages/dogeared.html">
-							<div class="button-text">
-								see designs
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-
 		</div>
 	</div>
 </body>
