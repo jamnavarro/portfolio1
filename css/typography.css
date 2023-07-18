@@ -1,56 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend');
-@import url('https://fonts.googleapis.com/css?family=Suwannaphum');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;600;800&family=Work+Sans:wght@100;900&display=swap');
 @import "style.css";
 
 body {
-	font-family: "Lexend", Helvetica, Arial, sans-serif;
+	font-family: "DM Sans", sans-serif;
 	color: var(--black);
 }
 
-.text-container {
-	margin: 1%;
-	background-color: transparent;
+a {
+	color: var(--green);
+	text-decoration: underline;
 }
-
-
 
 
 /* GENERAL TEXT PROPERTIES */
+.jam-text {
+	color: var(--black);
+	font-size:calc(100% + 7vw);
+	font-weight: 900;
+	letter-spacing: 8px;
+	padding-bottom: 20px;
+	font-family: "Work Sans", sans-serif;
+}
+
 .header-text {
 	color: var(--black);
-	font-family: "Suwannaphum", Georgia, Garamond, serif;
-	font-size: 38px;
-	font-weight: bold;
+	font-size:calc(100% + 4vw);
 	letter-spacing: 8px;
 	padding-bottom: 20px;
 }
 
 .subheader-text {
 	color: var(--black);
-  	font-family: "Suwannaphum", Georgia, Garamond, serif;
-	font-weight: bold;
-	font-size: 30px;
+	font-weight: 600;
+	font-size:calc(100% + 0.8vw);
+	text-align: left;
 	padding-bottom: 20px;
+}
+
+.subheader-text a {
+	text-decoration:underline;
+}
+
+.subheader-text.current {
+	text-decoration: underline;
 }
 
 .sub-subheader-text {
 	color: var(--black);
-  	font-family: "Suwannaphum", Georgia, Garamond, serif;
-	font-size: 20px;
-	padding-bottom: 20px;
+	font-weight: 600;
+	font-size:calc(100% + 0.2vw);
+	padding-bottom: 5px;
+	text-align: left;
 }
 
 .body-text {
 	color: var(--black);
-	font-family: "Lexend", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-weight: 200;
+	font-size:calc(100% + 0.07vw);
+	padding-bottom: 10px;
+	text-align: left;
+	line-height: 30px;
 	padding-bottom: 20px;
 }
 
+.body-text.current {
+	text-decoration: underline;
+}
+
 .button-text {
-	font-family: "Suwannaphum", Georgia, Garamond, serif;
 	letter-spacing: 3px;
-	font-size: 26px;
+	font-size: 20px;
 }
 
 
@@ -65,31 +84,5 @@ body {
 @media only screen and (max-width: 1800px) {
 	.button-text {
 		font-size: 20px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.button-text {
-		font-size: 18px;
-	}
-
-	.header-text {
-		font-size: 24px;
-		padding-bottom: 0;
-	}
-
-	.subheader-text {
-		font-size: 18px;
-		padding-bottom: 0;
-	}
-
-	.sub-subheader-text {
-		font-size: 12px;
-		padding-bottom: 0;
-	}
-
-	.body-text {
-		font-size: 12px;
-		padding-bottom: 0;
 	}
 }

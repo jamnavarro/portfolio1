@@ -6,51 +6,148 @@
 	margin: 0 auto;
 	display: flex;
 	overflow-y: scroll;
-	scroll-snap-type: y proximity;
-	flex-direction: column;
-}
-
-.no-snap-container {
-	width: 100%;
-	height: 100vh;
-	margin: 0 auto;
-	display: flex;
-	overflow-y: scroll;
+	overflow-x: hidden;
 	flex-direction: column;
 }
 
 /* SECTIONS */
 
-.section {
-	width: 100%;
+.title-section {
 	min-height: 100vh;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	scroll-snap-align: start;
 	flex-direction: column;
 	background-size: cover;
 	position: relative;
+	padding: 0px 30px;
 }
 
-@media only screen and (max-width: 700px) {
-	.section {
-		min-height: 80%;
-	}
+.section {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+	position: relative;
+	padding: 30px 30px;
+}
+
+.section.half {
+	display: grid;
+	align-items: center; 
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
 }
 
 .section-image {
 	width: 70vw;
 	display: flex;
+	border-radius: 20px;
 }
 
-.parallax-name {
-	background-image: url(../assets/icons/name.png);
+.section-image.half {
+	width: 36vw;
+	display: flex;
+	border-radius: 10px;
+}
+
+
+/* ABOUT SECTION */
+
+.about-container {
+	display: inline-block;
+	align-items: center; 
+	padding: 0px 20vw;
+}
+
+.about-image {
+	max-width: 90%;
+	max-height: 90%;
+}
+
+/* PROJECT SECTION */
+
+.overview-container {
+	display: grid;
+	align-items: top; 
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 100px;
+}
+
+
+
+
+.text-container.full {
+	width: 70%;
+	height: fit-content;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+	position: relative;
+	padding: 30px 30px;
+}
+
+.tool-image {
+	width: 3em;
+	height: 3em;
+	margin: 10px;
+}
+
+
+.parallax {
+	background-image: url("/assets/images/homepage.svg");
 	min-height: 100vh;
 	width: 100%;
-	background-color: var(--blue);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 70%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.about-container {
+		display: inline-block;
+		align-items: center; 
+		padding: 0px 10vw;
+	}
+	
+	.overview-container {
+		display: inline-block;
+		align-items: center;
+	}
+
+	.parallax {
+		background-image: none;
+		background-color: var(--white);
+	}
+
+	.section.half {
+		height: fit-content;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background-size: cover;
+		position: relative;
+		padding: 30px 30px;
+	}
+
+	.section-image.half {
+		width: 50vw;
+		display: flex;
+		border-radius: 10px;
+		margin: 10px;
+	}
+
+	.text-container.full {
+		width: 100%;
+	}	
 }

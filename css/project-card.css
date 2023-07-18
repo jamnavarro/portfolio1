@@ -1,100 +1,29 @@
 @import "style.css";
 
 .project-card {
-    width:60%;
-    min-height: 400px;
+    width: 80%;
+    height: auto;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    border: solid 3px var(--black);
-    padding: 20px;
-    box-shadow: -15px 15px var(--black);
-}
-
-.project-card.right {
-    margin-left: 300px;
-    text-align: right;
-    justify-content: right;
-}
-    
-.project-card.left {
-    margin-right: 300px;
-    text-align: left;
-    justify-content: left;
+    background-color: transparent;
 }
 
 .project-card-container {
-    padding: 48px 48px;
+    padding: 30px 30px;
     width: fit-content;
+    position: relative;
 }
 
 .project-image {
-    width: 20%;
+    width: 80vw;
+    min-width: 360px;
     height: auto;
-    position: absolute;
-    border-radius: 50px;
-    box-shadow: -15px 15px var(--black);
-}
-
-.project-image.left {
-    top: 20%;
-    left: 15%;
-}
-
-.project-image.right {
-    top: 20%;
-    right: 15%;
+    position: relative;
 }
 
 @media only screen and (max-width: 900px) {
 .project-card {
     width: 90%;
-}
-
-.project-image.left {
-    display: none;
-}
-
-.project-image.right {
-    display: none;
-}
-
-.project-card.right {
-    margin-left: 0%;
-}
-    
-.project-card.left {
-    margin-right: 0%;
-}
-}
-
-
-
-/* PROJECT CARD COLORS */
-.project-card.about {
-	background-color: var(--grey);
-}
-
-.project-card.white {
-	background-color: var(--white);
-}
-
-.project-card.green {
-	background-color: var(--green);
-}
-
-.project-card.blue {
-	background-color: var(--blue);
-}
-
-.project-card.pink {
-    background-color: var(--pink);
-}
-
-.project-card.yellow {
-	background-color: var(--yellow);
-}
-
-.project-card.purple {
-	background-color: var(--purple);
+    }
 }

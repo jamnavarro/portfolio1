@@ -1,20 +1,45 @@
 @import "style.css";
 
 /* BUTTON DESIGN */
-a.button {
-	padding: 8px 30px;
+
+a.image-button {
 	text-decoration: none;
 	width: fit-content;
 	display: flex;
-	border-radius: 30px;
+	background-color: var(--white);
+	margin:auto;
+	transition: 0.3s;
+	transform: scale(1);
+}
+
+.image-box {
+	border-radius: 20px;
+	display: flex;
+    position: relative;
+    margin: 20px 0px 20px 0px;
+    overflow: hidden;
+}
+
+.image-box:hover {
+	transform: scale(1);
+}
+
+a.image-button:hover {
+	transition: 0.3s;
+	transform: scale(1.05);
 }
 
 a.button {
+	padding: 8px 20px;
+	text-decoration: none;
+	width: fit-content;
+	display: flex;
+	border-radius: 0px;
 	background-color: var(--white);
 	color: var(--black);
 	box-shadow: -10px 10px var(--black);
 	border: 3px solid var(--black);
-	margin:auto
+	text-align: right;
 }
 
 a.button:hover {
@@ -22,4 +47,6 @@ a.button:hover {
 	transition: 0.3s;
 	transform: translate(-5px, 5px);
 	box-shadow: -5px 5px var(--black);
+	background-color: var(--purple);
+	color: var(--white);
 }

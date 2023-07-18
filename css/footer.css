@@ -3,10 +3,17 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    background-color: var(--blue);
     padding-top: 40px;
-    padding-bottom: 40px;
     position: relative;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    background-color: transparent;
 }
 
 .icon {

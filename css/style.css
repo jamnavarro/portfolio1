@@ -5,20 +5,16 @@
 }
 
 body {
-	background-color:var(--white);
-	background-size: 40px 40px;
-	background-image:
-		linear-gradient(to left, var(--grey) 1px, transparent 1px),
-		linear-gradient(to bottom, var(--grey) 1px, transparent 1px);
+	background: var(--white);
 }
 
 :root {
-	--white:#F8F2F2;
+	--white:#fdf9f9;
 	--grey: #d3d3d3;
 	--black:#382E33;
 	--purple:#9A8BA9;
-	--green:#B7DFC0;
-	--blue:#9AC2C9;
+	--green:#85b58f;
+	--blue:#618b92;
 	--pink:#FFA69E;
 	--yellow:#FFCB47;
 }
