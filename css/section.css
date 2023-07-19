@@ -41,6 +41,7 @@
 	align-items: center; 
 	justify-items: center;
 	grid-template-columns: 1fr 1fr;
+	column-gap: normal;
 }
 
 .section-image {
@@ -51,8 +52,12 @@
 
 .section-image.half {
 	width: 36vw;
-	display: flex;
-	border-radius: 10px;
+	border-radius: 5px;
+}
+
+.section-image.fourth {
+	width: 18vw;
+	border-radius: 0px;
 }
 
 
@@ -145,6 +150,11 @@
 		display: flex;
 		border-radius: 10px;
 		margin: 10px;
+	}
+
+	.section-image.fourth {
+		width: 60vw;
+		border-radius: 0px;
 	}
 
 	.text-container.full {
