@@ -12,6 +12,7 @@ body {
 	width: 70vw;
 	height: 5px;
 	background-color: var(--purple);
+	margin: 10px;
 }
 
 :root {
