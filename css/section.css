@@ -45,7 +45,7 @@
 }
 
 .section-image {
-	width: 70vw;
+	width: 75vw;
 	display: flex;
 }
 
@@ -143,9 +143,8 @@
 	}
 
 	.section-image.half {
-		width: 50vw;
+		width: 75vw;
 		display: flex;
-		margin: 10px;
 	}
 
 	.section-image.fourth {
@@ -154,5 +153,5 @@
 
 	.text-container.full {
 		width: 100%;
-	}	
+	}
 }
