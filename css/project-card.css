@@ -10,20 +10,45 @@
 }
 
 .project-card-container {
-    padding: 30px 30px;
-    width: fit-content;
+    padding: 0px 0px;
+    width:max-content;
     position: relative;
 }
 
 .project-image {
-    width: 80vw;
-    min-width: 360px;
-    height: auto;
-    position: relative;
+	width: 75vw;
+	display: flex;
+	align-items: center; 
+	margin: auto;
+}
+
+.project-image.half {
+	width: 100%;
+}
+
+.project-image.fourth {
+	width: 24vw;
+}
+
+.project-image.about {
+	width: 100%;
 }
 
 @media only screen and (max-width: 900px) {
-.project-card {
-    width: 90%;
+    .project-card {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .section-image.half {
+        width: 75vw;
+        display: flex;
+    }
+    
+    .section-image.about {
+        width: 50vw;
     }
 }
+

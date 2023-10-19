@@ -7,7 +7,11 @@ body {
 }
 
 a {
-	color: var(--green);
+	text-decoration: none;
+}
+
+a:hover {
+	transition: 0.3s;
 	text-decoration: underline;
 }
 
@@ -15,17 +19,16 @@ a {
 /* GENERAL TEXT PROPERTIES */
 .jam-text {
 	color: var(--black);
-	font-size:calc(100% + 7vw);
-	font-weight: 900;
-	letter-spacing: 8px;
-	padding-bottom: 20px;
-	font-family: "Work Sans", sans-serif;
+	font-size:calc(100% + 4vw);
+	font-weight: 600;
+	padding-bottom: 50px;
 }
 
 .header-text {
 	color: var(--black);
-	font-size:calc(100% + 4vw);
+	font-size:calc(100% + 2vw);
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 .subheader-text {
@@ -33,7 +36,7 @@ a {
 	font-weight: 900;
 	font-size:calc(100% + 1vw);
 	text-align: left;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 }
 
 .subheader-text a {
@@ -55,7 +58,7 @@ a {
 .body-text {
 	color: var(--black);
 	font-weight: 300;
-	font-size:calc(100% + 0.07vw);
+	font-size:calc(100% + 0.02vw);
 	text-align: left;
 	line-height: 30px;
 	padding-bottom: 20px;
@@ -84,7 +87,6 @@ a {
 	padding-bottom: 5px;
 	text-align: center;
 	color: var(--purple);
-	font-style: italic;
 	font-family: "Work Sans", sans-serif;
 }
 

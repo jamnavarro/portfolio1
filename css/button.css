@@ -15,12 +15,13 @@ a.image-button {
 .image-box {
 	display: flex;
     position: relative;
-    margin: 20px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     overflow: hidden;
+	width: fit-content;
 }
 
 .image-box.curved {
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 .image-box:hover {

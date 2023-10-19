@@ -1,14 +1,14 @@
 @import "style.css";
 
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
    display: none;
-  }
+  } */
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  /* ::-webkit-scrollbar-track {
     display: none; 
-  }
+  } */
   
   /* Handle */
   ::-webkit-scrollbar-thumb {

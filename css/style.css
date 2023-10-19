@@ -16,10 +16,10 @@ body {
 }
 
 :root {
-	--white:#fdf9f9;
+	--white:#ffffff;
 	--grey: #d3d3d3;
-	--black:#382E33;
-	--purple:#9A8BA9;
+	--black:#000000;
+	--purple:#7b7680;
 	--green:#85b58f;
 	--blue:#618b92;
 	--pink:#FFA69E;
