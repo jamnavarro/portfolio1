@@ -2,7 +2,7 @@
 
 /* NAVIGATION BAR FUNCTIONS */
 .topnav {
-  background-color: var(--white);  
+  /* background-color: var(--white);   */
   z-index: 100;
   width: 100%;
 }

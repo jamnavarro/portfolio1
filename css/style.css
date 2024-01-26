@@ -10,7 +10,7 @@ body {
 
 .break {
 	width: 70vw;
-	height: 5px;
+	height: 2px;
 	background-color: var(--purple);
 	margin: 10px;
 }
