@@ -20,9 +20,9 @@ a.image-button {
 	width: fit-content;
 }
 
-.image-box.curved {
+/* .image-box.curved {
 	border-radius: 10px;
-}
+} */
 
 .image-box:hover {
 	transform: scale(1);
@@ -30,7 +30,7 @@ a.image-button {
 
 a.image-button:hover {
 	transition: 0.3s;
-	transform: scale(1.05);
+	transform: scale(0.99);
 }
 
 a.button {
