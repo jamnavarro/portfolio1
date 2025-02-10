@@ -22,7 +22,7 @@
 /* SECTIONS */
 
 .title-section {
-	min-height: 100vh;
+	min-height: 60vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -34,6 +34,9 @@
 }
 
 .section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 	width: 100%;
 	height: fit-content;
 	display: flex;
@@ -45,6 +48,11 @@
 	padding: 30px 30px;
 }
 
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .section.half {
 	display: grid;
 	align-items: start; 
@@ -52,17 +60,49 @@
 	grid-template-columns: 1fr 1fr;	
 }
 
-.section.half.about {
-	width: 100%;
-	grid-template-columns: 40% 50vw;
-	column-gap: 1%;
+.section.about {
+	margin: 10vh 0;
 }
+
+
+
+
+/* container */
+.responsive-two-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-two-column-grid > * {
+    padding: 0 50px;
+}
+
+/* tablet breakpoint */
+@media (min-width:1028px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .section-image {
 	width: 75vw;
 	display: flex;
 	align-items: center; 
 	margin: auto;
+}
+
+.section-image.home {
+	border-radius: 1rem;
 }
 
 .section-image.half {
@@ -77,31 +117,26 @@
 	width: 100%;
 }
 
-
-/* ABOUT SECTION */
-
-.about-container {
-	width: 70%;
-	height: fit-content;
-	align-items: left;
-	justify-content: center;
-	flex-direction: column;
-	background-size: cover;
-	position: relative;
-	padding: 0px 0px;
-}
-
 /* PROJECT SECTION */
 
 .overview-container {
 	display: grid;
-	align-items: top; 
+	align-items: start; 
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 100px;
+	column-gap: 10px;
+	text-align: center;
+}
+
+.overview-container .body-text {
+    text-align: center;
+}
+
+.overview-container .subheader-text {
+	text-align: center;
 }
 
 .text-container.full {
-	width: 70%;
+	width: 50%;
 	height: fit-content;
 	display: flex;
 	align-items: left;
@@ -120,7 +155,7 @@
 
 
 .parallax {
-	min-height: 100vh;
+	max-height: 70vh;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -129,10 +164,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
-	.about-container {
-		width: 70%;
-	}
 	
 	.overview-container {
 		display: inline-block;
@@ -172,3 +203,6 @@
 		width: 100%;
 	}
 }
+
+
+/* ANIMATIONS */

@@ -20,9 +20,13 @@ a.image-button {
 	width: fit-content;
 }
 
-/* .image-box.curved {
-	border-radius: 10px;
-} */
+.button-pill {
+	z-index: 2000;
+	width: fit-content;
+	height: fit-content;
+	padding: 5px 20px;
+	border-radius: 30px;
+}
 
 .image-box:hover {
 	transform: scale(1);

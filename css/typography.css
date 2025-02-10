@@ -20,9 +20,10 @@ a:hover {
 /* GENERAL TEXT PROPERTIES */
 .jam-text {
 	color: var(--black);
-	font-size:calc(100% + 4vw);
-	font-weight: 600;
-	padding-bottom: 50px;
+	font-size:calc(100% + 3vw);
+	font-weight: 00;
+	font-style: normal;
+	line-height: 110%;
 }
 
 .header-text {
@@ -34,8 +35,8 @@ a:hover {
 
 .subheader-text {
 	color: var(--black);
-	font-weight: 900;
-	font-size:calc(100% + 1vw);
+	font-weight: 800;
+	font-size:calc(100% + 0.2rem);
 	text-align: left;
 	padding-bottom: 5px;
 }
@@ -51,7 +52,7 @@ a:hover {
 .sub-subheader-text {
 	color: var(--black);
 	font-weight: 600;
-	font-size:calc(100% + 0.2vw);
+	font-size:calc(100% + rem);
 	padding-bottom: 5px;
 	text-align: left;
 }
@@ -59,11 +60,16 @@ a:hover {
 .body-text {
 	color: var(--black);
 	font-weight: 300;
-	font-size:calc(100% + 0.02vw);
+	font-size:calc(95% + 0.02rem);
 	text-align: left;
 	line-height: 30px;
 	padding-bottom: 20px;
 }
+
+.body-text.pill {
+	padding: 2px;
+	text-align: center;
+	font-size:calc(100% + 0.02vw);}
 
 .small-header-text {
 	color: var(--purple);
@@ -75,6 +81,7 @@ a:hover {
 
 .body-text.current {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 .button-text {
